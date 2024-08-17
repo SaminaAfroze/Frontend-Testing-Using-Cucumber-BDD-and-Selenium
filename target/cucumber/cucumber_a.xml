@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="800.563" tests="12" skipped="0" failures="0" errors="0">
+<testcase classname="List Page Data Validation" name="Validate data in the list page" time="123.023">
+<system-out><![CDATA[
+Given the user navigates to the Intent List Page............................passed
+When user fetch the data from the list......................................passed
+Then the data in the list should match the predefined dataset...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Add Intent with Entities" name="Fill out the form with valid data including entities" time="51.545">
+<system-out><![CDATA[
+When the user navigates to the Intent form page.............................passed
+When the user fills in the following details:...............................passed
+And the user submits the form...............................................passed
+Then the user should be redirected to the landing page......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add Intent with Entities" name="Fill out the form with mandatory fields only" time="51.186">
+<system-out><![CDATA[
+When the user navigates to the Intent form page.............................passed
+When the user fills in the following details:...............................passed
+And the user submits the form...............................................passed
+Then the user should be redirected to the landing page......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Add Intent with Entities" name="Fill out the form without filling mandatory fields" time="51.268">
+<system-out><![CDATA[
+When the user navigates to the Intent form page.............................passed
+When the user fills in the following details:...............................passed
+And the user submits the form...............................................passed
+Then the user should see an error message...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Kitchen closure conversation" name="Edit Kitchen Name" time="90.529">
+<system-out><![CDATA[
+Given user logged in SocUI with "IM" credentials............................passed
+And the user clicks on app..................................................passed
+When the user clicks on the edit button.....................................passed
+And the user edits the kitchen closure conversation name....................passed
+And the user clicks on the submit button....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Edit Kitchen closure conversation" name="Edit Kitchen Location" time="90.492">
+<system-out><![CDATA[
+Given user logged in SocUI with "IM" credentials............................passed
+And the user clicks on app..................................................passed
+When the user clicks on the edit button.....................................passed
+And the user edits the kitchen Location.....................................passed
+And the user clicks on the submit button....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Generate csv Validation" name="Validate csv generation in list page" time="15.082">
+<system-out><![CDATA[
+Given the user navigates to the Intent List Page............................passed
+When user clicks on the csv generating button...............................passed
+Then the csv file gets generated............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Automate intent activation and deactivation" name="Toggle the last intent activation status" time="25.462">
+<system-out><![CDATA[
+Given the user navigates to the Intent List Page............................passed
+When user clicks on the toggle button of the last intent....................passed
+Then the activation status of the last intent should be toggled.............passed
+]]></system-out>
+</testcase>
+<testcase classname="Update Intent with necessary details" name="Fill out the form with valid data including entities" time="47.277">
+<system-out><![CDATA[
+When the user navigates to the Update Intent Page...........................passed
+When the user fills in the following details:...............................passed
+And the user submits the form of update.....................................passed
+Then the user should be redirected to the landing page......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Update Intent with necessary details" name="Fill out the form with Troubleshooting LLMs true" time="57.605">
+<system-out><![CDATA[
+When the user navigates to the Update Intent Page...........................passed
+And user clicks on Troubleshooting LLMs.....................................passed
+When the user fills in the following details:...............................passed
+And the user submits the form of update.....................................passed
+Then the user should be redirected to the landing page......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Viewing ticket details in Zendesk" name="Viewing ticket details" time="169.881">
+<system-out><![CDATA[
+Given user logged in SocUI with "IM" credentials............................passed
+And the user clicks on app..................................................passed
+And user clicks on the confirm button.......................................passed
+Then a pop up will be shown.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login functionality for Zendesk Frontend" name="Login to soc UI with SOC credentials" time="26.833">
+<system-out><![CDATA[
+Given user logged in SocUI with "IM" credentials............................passed
+]]></system-out>
+</testcase>
+</testsuite>

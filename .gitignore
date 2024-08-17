@@ -1,0 +1,5 @@
+# IDE-specific directories
+.idea
+.vscode
+.idea/
+.vscode/
